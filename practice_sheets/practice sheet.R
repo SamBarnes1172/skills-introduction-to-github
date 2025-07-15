@@ -252,5 +252,4 @@ tryout <- penguins |> semi_join(penguins_id, join_by(id == id))
 #penguins and penguins_id together using id
 
 #pivot practice
-hm <- penguins |> pivot_wider(names_from = species, values_from = body_mass)
-#this doesnt work yet
+hm <- penguins |> pivot_wider(names_from = species,
