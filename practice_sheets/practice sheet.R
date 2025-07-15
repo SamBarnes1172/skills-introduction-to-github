@@ -250,6 +250,3 @@ penguins <- penguins |> mutate(bill_vol = bill_len * bill_dep)
 tryout <- penguins |> semi_join(penguins_id, join_by(id == id))
 #so now my "penguins_id" has the new column bill_vol as it fit
 #penguins and penguins_id together using id
-
-#pivot practice
-hm <- penguins |> pivot_wider(names_from = species,
